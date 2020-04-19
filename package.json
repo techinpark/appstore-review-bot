@@ -1,0 +1,36 @@
+{
+  "name": "appstore-review-bot",
+  "version": "1.0.0",
+  "description": "🤖 Easy forward appstore reviews to slack channel using webhook",
+  "main": "app.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "start": "node dist/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/techinpark/appstore-review-bot.git"
+  },
+  "keywords": [
+    "appstore-review"
+  ],
+  "author": "Fernando",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/techinpark/appstore-review-bot/issues"
+  },
+  "homepage": "https://github.com/techinpark/appstore-review-bot#readme",
+  "dependencies": {
+    "@actions/core": "^1.2.3",
+    "@slack/webhook": "^5.0.3",
+    "@types/axios": "^0.14.0",
+    "@types/cheerio": "^0.22.17",
+    "@types/node": "^13.13.0",
+    "app-store-scraper": "^0.16.2",
+    "axios": "^0.19.2",
+    "cheerio": "^1.0.0-rc.3",
+    "ts-node": "^8.8.2",
+    "typescript": "^3.8.3"
+  }
+}
