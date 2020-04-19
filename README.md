@@ -11,6 +11,7 @@
 - `fork` repository.
 - go to `Settings` - `Secrets` - `Add a new secret` 
 - Input your slack webhook name `WEBHOOKS`
+- `src/config.json` - change `appId` , `country` for your apps.
 - Done 🎉
 
 # Contribution 
