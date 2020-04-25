@@ -1,17 +1,17 @@
-import axios from 'axios';
+import axios from 'axios'
 
 interface slackArgs {
     review: {
-        id: string;
-        userName: string; 
-        userUrl: string; 
-        version: string; 
-        score: string; 
-        title: string;
-        text: string; 
-    }; 
+        id: string
+        userName: string 
+        userUrl: string 
+        version: string 
+        score: string 
+        title: string
+        text: string 
+    } 
 
-    url: string; 
+    url: string 
 }
 
 export default async({review, url}: slackArgs) => {
@@ -57,7 +57,7 @@ export default async({review, url}: slackArgs) => {
 
         footer: 'Github - appstore-review-bot',
         footer_icon: 'https://github.githubassets.com/favicons/favicon-dark.png'
-    });
+    })
     
-    await axios.post(url, message);
-};
+    await axios.post(url, message)
+}

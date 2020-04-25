@@ -1,5 +1,5 @@
-var scraper = require('app-store-scraper');
-import config from '../config.json';
+var scraper = require('app-store-scraper')
+import config from '../config.json'
 
 export const parse = async() => {
     return scraper.reviews({
@@ -8,4 +8,4 @@ export const parse = async() => {
         sort: scraper.sort.RECENT, 
         page: 1 
     })
-};
+}
